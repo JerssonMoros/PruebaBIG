@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+		<openerp>
+
+			<data>
+
+                <record id="testmod_test_form" model="ir.ui.view">
+                    <field name="name">testmod.test.form</field>
+                    <field name="model">testmod.test</field>
+                    <field name="arch" type="xml">
+                        <form string="Test" version="7.0"> 
+                            <field name="test1"/>
+                            <field name="test2"/>
+                        </form>
+                    </field>
+                </record>
+                <record id="testmod_test_tree" model="ir.ui.view">
+                    <field name="name">testmod.test.tree</field>
+                    <field name="model">testmod.test</field>
+                    <field name="arch" type="xml">
+                        <tree string="Test">
+                            <field name="test1"/>
+                            <field name="test2"/>
+                        </tree>
+                    </field>
+                </record>
+
+
+                <record model="ir.actions.act_window" id="action_testmod_test">
+                    <field name="name">Test</field>
+                    <field name="res_model">testmod.test</field>
+                    <field name="view_type">form</field>
+                    <field name="view_mode">tree,form</field>
+                </record>
+
+                <menuitem
+                    name="Test"
+                    id="menu_testmod_test"
+                />
+    
+                <menuitem
+                    name="Test Management"
+                    parent="menu_testmod_test"
+                    id="menu_testmod_test_manag"
+                />
+
+                <menuitem
+                    name="Sub Test Management"
+                    id="menu_testmod_test_manag_sub"
+                    parent="menu_testmod_test_manag"
+                    action="action_testmod_test"
+                />
+
+                <menuitem
+                    name="Prueba"
+                    parent="menu_testmod_test"
+                    id="menu_testmod_test_manag"
+                />
+
+            </data>
+	</openerp>

@@ -1,0 +1,322 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* maintenance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0-20171001\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-13 16:08+0000\n"
+"PO-Revision-Date: 2022-04-13 11:34-0500\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"Language: es_CO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: maintenance
+#: field:maintenance.asset,acquisition_date:0
+msgid "Acquisition Date"
+msgstr "Dia Adquirido"
+
+#. module: maintenance
+#: field:maintenance.order,applicant_id:0
+msgid "Applicant"
+msgstr "Aplicacion"
+
+#. module: maintenance
+#: model:ir.actions.act_window,name:maintenance.action_maintenance_asset_form
+#: model:ir.ui.menu,name:maintenance.menu_maintenance_assset
+#: field:maintenance.order,asset_id:0
+msgid "Asset"
+msgstr "Activo"
+
+#. module: maintenance
+#: model:ir.actions.act_window,name:maintenance.action_maintenance_asset_type
+#: model:ir.ui.menu,name:maintenance.menu_maintenance_asset_types
+msgid "Asset Type"
+msgstr "Tipo de Activo"
+
+#. module: maintenance
+#: field:maintenance.order,employee_id:0
+msgid "Assigned Employee"
+msgstr "Empleado Asignado"
+
+#. module: maintenance
+#: field:maintenance.order,beneficiary_id:0
+msgid "Beneficiary"
+msgstr "Beneficiario"
+
+#. module: maintenance
+#: field:maintenance.asset,create_uid:0
+#: field:maintenance.asset.type,create_uid:0
+#: field:maintenance.order,create_uid:0 field:maintenance.service,create_uid:0
+#: field:maintenance.service.type,create_uid:0
+#: field:maintenance.technical,create_uid:0
+#: field:maintenance.technical.type,create_uid:0
+msgid "Created by"
+msgstr "Creado  por"
+
+#. module: maintenance
+#: field:maintenance.asset,create_date:0
+#: field:maintenance.asset.type,create_date:0
+#: field:maintenance.order,create_date:0
+#: field:maintenance.service,create_date:0
+#: field:maintenance.service.type,create_date:0
+#: field:maintenance.technical,create_date:0
+#: field:maintenance.technical.type,create_date:0
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: maintenance
+#: help:maintenance.asset,acquisition_date:0
+msgid "Date when the asset has been bought"
+msgstr "Fecha de compra del activo"
+
+#. module: maintenance
+#: field:maintenance.order,description:0
+#: field:maintenance.technical,description:0
+msgid "Description"
+msgstr "Descripcion"
+
+#. module: maintenance
+#: field:maintenance.asset,display_name:0
+#: field:maintenance.asset.type,display_name:0
+#: field:maintenance.order,display_name:0
+#: field:maintenance.service,display_name:0
+#: field:maintenance.service.type,display_name:0
+#: field:maintenance.technical,display_name:0
+#: field:maintenance.technical.type,display_name:0
+msgid "Display Name"
+msgstr "Nombre en pantalla"
+
+#. module: maintenance
+#: field:maintenance.asset,employee_id:0
+#: field:maintenance.technical,employee_id:0
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: maintenance
+#: help:maintenance.asset,employee_id:0
+#: help:maintenance.technical,employee_id:0
+msgid "Employee who has this machine"
+msgstr "Empleado a cargo de la maquina"
+
+#. module: maintenance
+#: field:maintenance.order,finish_date:0
+#: field:maintenance.service,finish_date:0
+msgid "Finish Date"
+msgstr "Fecha Finalizacion"
+
+#. module: maintenance
+#: field:maintenance.asset,id:0 field:maintenance.asset.type,id:0
+#: field:maintenance.order,id:0 field:maintenance.service,id:0
+#: field:maintenance.service.type,id:0 field:maintenance.technical,id:0
+#: field:maintenance.technical.type,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: maintenance
+#: field:maintenance.asset,__last_update:0
+#: field:maintenance.asset.type,__last_update:0
+#: field:maintenance.order,__last_update:0
+#: field:maintenance.service,__last_update:0
+#: field:maintenance.service.type,__last_update:0
+#: field:maintenance.technical,__last_update:0
+#: field:maintenance.technical.type,__last_update:0
+msgid "Last Modified on"
+msgstr "ultima modificacion en"
+
+#. module: maintenance
+#: field:maintenance.asset,write_uid:0 field:maintenance.asset.type,write_uid:0
+#: field:maintenance.order,write_uid:0 field:maintenance.service,write_uid:0
+#: field:maintenance.service.type,write_uid:0
+#: field:maintenance.technical,write_uid:0
+#: field:maintenance.technical.type,write_uid:0
+msgid "Last Updated by"
+msgstr "Ultima actualizacion por"
+
+#. module: maintenance
+#: field:maintenance.asset,write_date:0
+#: field:maintenance.asset.type,write_date:0
+#: field:maintenance.order,write_date:0 field:maintenance.service,write_date:0
+#: field:maintenance.service.type,write_date:0
+#: field:maintenance.technical,write_date:0
+#: field:maintenance.technical.type,write_date:0
+msgid "Last Updated on"
+msgstr "Ultima actualizacion en"
+
+#. module: maintenance
+#: field:maintenance.asset,location:0
+msgid "Location"
+msgstr "ubicacion"
+
+#. module: maintenance
+#: help:maintenance.asset,location:0
+msgid "Location of the asset"
+msgstr "Ubicacion del activo"
+
+#. module: maintenance
+#: model:ir.ui.menu,name:maintenance.menu_maintenance
+msgid "Maintenance"
+msgstr "Mantenimiento"
+
+#. module: maintenance
+#: model:ir.ui.menu,name:maintenance.menu_maintenance_groups
+msgid "Management"
+msgstr "Administracion"
+
+#. module: maintenance
+#: field:maintenance.asset.type,name:0 field:maintenance.service.type,name:0
+#: field:maintenance.technical.type,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: maintenance
+#: help:maintenance.asset,asset_name:0
+msgid "Name of asset"
+msgstr "Nombre del activo"
+
+#. module: maintenance
+#: field:maintenance.service,notes:0
+msgid "Notes"
+msgstr "Notas"
+
+#. module: maintenance
+#: model:ir.actions.act_window,name:maintenance.action_maintenance_order
+#: model:ir.ui.menu,name:maintenance.menu_maintenance_order
+#: field:maintenance.asset,order_ids:0 field:maintenance.service,order_id:0
+msgid "Order"
+msgstr "Orden"
+
+#. module: maintenance
+#: field:maintenance.order,order_number:0
+msgid "Order Number"
+msgstr "Numero de orden"
+
+#. module: maintenance
+#: field:maintenance.asset,serial_number:0
+msgid "Serial Number"
+msgstr "Numero Serial"
+
+#. module: maintenance
+#: help:maintenance.asset,serial_number:0
+msgid "Serial Number of this asset"
+msgstr "Numero serial del activo"
+
+#. module: maintenance
+#: model:ir.actions.act_window,name:maintenance.action_maintenance_service_form
+#: model:ir.ui.menu,name:maintenance.menu_maintenance_service
+msgid "Service"
+msgstr "Servicio"
+
+#. module: maintenance
+#: model:ir.actions.act_window,name:maintenance.action_maintenance_service_type
+#: model:ir.ui.menu,name:maintenance.menu_maintenance_service_types
+msgid "Service Type"
+msgstr "Tipo Servicio"
+
+#. module: maintenance
+#: field:maintenance.order,service_ids:0
+#: field:maintenance.technical,service_ids:0
+msgid "Services"
+msgstr "Servicios"
+
+#. module: maintenance
+#: field:maintenance.order,start_date:0
+msgid "Start Date"
+msgstr "Fecha Comienzo"
+
+#. module: maintenance
+#: model:ir.actions.act_window,name:maintenance.action_maintenance_technical
+#: model:ir.ui.menu,name:maintenance.menu_maintenance_technical
+#: field:maintenance.service,technical_id:0
+msgid "Technical"
+msgstr "Tecnico"
+
+#. module: maintenance
+#: model:ir.actions.act_window,name:maintenance.action_maintenance_technical_type
+#: model:ir.ui.menu,name:maintenance.menu_maintenance_technical_types
+msgid "Technical Type"
+msgstr "Tipo Tecnico"
+
+#. module: maintenance
+#: field:maintenance.asset,asset_type_id:0
+#: field:maintenance.service,service_type_id:0
+msgid "Type"
+msgstr "Tipo"
+
+#. module: maintenance
+#: field:maintenance.technical,technical_type_id:0
+msgid "Type Technical"
+msgstr "Tipo de Tecnico"
+
+#. module: maintenance
+#: model:ir.ui.menu,name:maintenance.menu_maintenance_types
+msgid "Types"
+msgstr "Tipos"
+
+#. module: maintenance
+#: help:maintenance.asset,value:0
+msgid "Value of the bought asset"
+msgstr "Valor del activo comprado"
+
+#. module: maintenance
+#: view:maintenance.asset:maintenance.maintenance_asset_form
+#: view:maintenance.asset:maintenance.maintenance_asset_tree
+msgid "asset"
+msgstr "Activo"
+
+#. module: maintenance
+#: field:maintenance.asset,value:0
+msgid "asset Value"
+msgstr "Valor del activo"
+
+#. module: maintenance
+#: view:maintenance.asset.type:maintenance.maintenance_asset_type_form
+#: view:maintenance.asset.type:maintenance.maintenance_asset_type_tree
+msgid "asset_type"
+msgstr "tipo_activo"
+
+#. module: maintenance
+#: field:maintenance.asset,asset_name:0
+msgid "name"
+msgstr "nombre"
+
+#. module: maintenance
+#: view:maintenance.order:maintenance.maintenance_order_form
+#: view:maintenance.order:maintenance.maintenance_order_tree
+msgid "order"
+msgstr "orden"
+
+#. module: maintenance
+#: view:maintenance.service:maintenance.maintenance_service_form
+#: view:maintenance.service:maintenance.maintenance_service_tree
+msgid "service"
+msgstr "servicio"
+
+#. module: maintenance
+#: view:maintenance.service.type:maintenance.maintenance_service_type_form
+#: view:maintenance.service.type:maintenance.maintenance_service_type_tree
+msgid "service_type"
+msgstr "tipo_servicio"
+
+#. module: maintenance
+#: view:maintenance.technical:maintenance.maintenance_technical_form
+#: view:maintenance.technical:maintenance.maintenance_technical_tree
+msgid "technical"
+msgstr "tecnico"
+
+#. module: maintenance
+#: view:maintenance.technical.type:maintenance.maintenance_technical_type_form
+#: view:maintenance.technical.type:maintenance.maintenance_technical_type_tree
+msgid "technical_type"
+msgstr "tipo_tecnico"
+
+#. module: maintenance
+#: help:maintenance.technical.type,name:0
+msgid "technician performance area"
+msgstr "Area donde se desempeña el tecnico"

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<openerp>
+    <data>
+
+        <record id="maintenance_asset_tree" model="ir.ui.view">
+            <field name="name">maintenance.asset.tree</field>
+            <field name="model">maintenance.asset</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="asset">
+                        <field name="asset_name"/>
+                    	<field name="serial_number"/>
+						<field name="employee_id"/>
+						<field name="asset_type_id"/>
+						<field name="acquisition_date" />
+						<field name="location"/>
+						<field name="value"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="maintenance_asset_form" model="ir.ui.view">
+            <field name="name">maintenance.asset.form</field>
+            <field name="model">maintenance.asset</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="asset" version="7.0">
+                    <group>
+                        <field name="asset_name"/>
+						<field name="serial_number"/>
+						<field name="employee_id"/>
+						<field name="asset_type_id"/>
+						<field name="acquisition_date" />
+						<field name="location"/>
+						<field name="value"/>
+                        <field name="order_ids"/>
+					</group>
+                </form>
+            </field>
+        </record>
+
+        <record  model="ir.actions.act_window" id="action_maintenance_asset_form">
+            <field name="name">Asset</field>
+            <field name="res_model">maintenance.asset</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="maintenance_service_tree" model="ir.ui.view">
+            <field name="mame">maintenance.service.tree</field>
+            <field name="model">maintenance.service</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="service">
+                    <field name="order_id"/>
+                    <field name="technical_id"/>
+                    <field name="service_type_id"/>
+                    <field name="finish_date"/>
+                    <field name="notes"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record id="maintenance_service_form" model="ir.ui.view">
+            <field name="name">maintenance.service.form</field>
+            <field name="model">maintenance.service</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="service" version="7.0">
+                    <group>
+                        <field name="order_id"/>
+                        <field name="technical_id"/>
+                        <field name="service_type_id"/>
+                        <field name="finish_date"/>
+                        <field name="notes"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_maintenance_service_form">
+            <field name="name">Service</field>
+            <field name="res_model">maintenance.service</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="maintenance_order_tree" model="ir.ui.view">
+            <field name="name">maintenance.order.tree</field>
+            <field name="model">maintenance.order</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="order">
+                    <field name="order_number"/>
+                    <field name="applicant_id"/>
+                    <field name="beneficiary_id"/>
+                    <field name="description"/>
+                    <field name="asset_id"/>
+                    <field name="employee_id"/>
+                    <field name="start_date"/>
+                    <field name="finish_date"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="maintenance_order_form" model="ir.ui.view">
+            <field name="name">maintenance.order.form</field>
+            <field name="model">maintenance.order</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="order" version="7.0">
+                    <group>
+                        <field name="order_number"/>
+                        <field name="applicant_id"/>
+                        <field name="beneficiary_id"/>
+                        <field name="description"/>
+                        <field name="asset_id"/>
+                        <field name="employee_id"/>
+                        <field name="start_date"/>
+                        <field name="finish_date"/>
+                        <field name="service_ids"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_maintenance_order" model="ir.actions.act_window">
+            <field name="name">Order</field>
+            <field name="res_model">maintenance.order</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="maintenance_asset_type_tree" model="ir.ui.view">
+            <field name="name">maintenance.asset.type.tree</field>
+            <field name="model">maintenance.asset.type</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <tree string="asset_type">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="maintenance_asset_type_form" model="ir.ui.view">
+            <field name="name">maintenance.asset.type.form</field>
+            <field name="model">maintenance.asset.type</field>
+            <field name="type"></field>
+            <field name="arch" type="xml">
+                <form string="asset_type" version="7.0">
+                    <field name="name"/>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_maintenance_asset_type" model="ir.actions.act_window">
+            <field name="name">Asset Type</field>
+            <field name="res_model">maintenance.asset.type</field>
+            <field name="view_type">form</field>
+            <field name="view_model">tree,form</field>
+        </record>
+
+        <record id="maintenance_service_type_tree" model="ir.ui.view">
+            <field name="name">Service Type</field>
+            <field name="model">maintenance.service.type</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="service_type">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="maintenance_service_type_form" model="ir.ui.view">
+            <field name="name">Service Type</field>
+            <field name="model">maintenance.service.type</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="service_type" version="7.0">
+                    <field name="name"/>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_maintenance_service_type" model="ir.actions.act_window">
+            <field name="name">Service Type</field>
+            <field name="res_model">maintenance.service.type</field>
+            <field name="view_type">form</field>
+            <field name="viwe_model">tree,form</field>
+        </record>
+
+        <record id="maintenance_technical_type_tree" model="ir.ui.view">
+            <field name="name">Technical Type</field>
+            <field name="model">maintenance.technical.type</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="technical_type">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="maintenance_technical_type_form" model="ir.ui.view">
+            <field name="name">Technical Type</field>
+            <field name="model">maintenance.technical.type</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="technical_type" version="7.0">
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_maintenance_technical_type" model="ir.actions.act_window">
+            <field name="name">Technical Type</field>
+            <field name="res_model">maintenance.technical.type</field>
+            <field name="view_type">form</field>
+            <field name="view_model">tree,form</field>
+        </record>
+
+        <record id="maintenance_technical_tree" model="ir.ui.view">
+            <field name="name">Technical</field>
+            <field name="model">maintenance.technical</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="technical">
+                    <field name="employee_id"/>
+                    <field name="description"/>
+                    <field name="technical_type_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="maintenance_technical_form" model="ir.ui.view">
+            <field name="name">Technical</field>
+            <field name="model">maintenance.technical</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="technical" version="7.0">
+                    <group>
+                        <field name="employee_id"/>
+                        <field name="description"/>
+                        <field name="service_ids"/>
+                        <field name="technical_type_id"/>
+                    </group>
+                    
+                </form>
+            </field>
+        </record>
+
+        <record id="action_maintenance_technical" model="ir.actions.act_window">
+            <field name="name">Technical</field>
+            <field name="res_model">maintenance.technical</field>
+            <field name="view_type">form</field>
+            <field name="view_model">tree,form</field>
+        </record>
+
+        <menuitem
+            name="Maintenance"
+            id="menu_maintenance"
+        />
+        
+        <menuitem
+            name="Management"
+            parent="menu_maintenance"
+            id="menu_maintenance_groups"
+        />
+
+        <menuitem
+            name="Asset"
+            parent="menu_maintenance_groups"
+            id="menu_maintenance_assset"
+            action="action_maintenance_asset_form"
+            sequence="1"
+        />
+
+        <menuitem
+            name="Service"
+            parent="menu_maintenance_groups"
+            id="menu_maintenance_service"
+            action="action_maintenance_service_form"
+            sequence="3"
+        />
+
+        <menuitem
+            name="Order"
+            parent="menu_maintenance_groups"
+            id="menu_maintenance_order"
+            action="action_maintenance_order"
+            sequence="2"
+        />
+
+        <menuitem
+            name="Technical"
+            parent="menu_maintenance_groups"
+            id="menu_maintenance_technical"
+            action="action_maintenance_technical"
+        />
+
+        <menuitem
+            name="Types"
+            parent="menu_maintenance"
+            id="menu_maintenance_types"
+        />
+
+        <menuitem
+            name="Asset Type"
+            parent="menu_maintenance_types"
+            id="menu_maintenance_asset_types"
+            action="action_maintenance_asset_type"
+        />
+
+        <menuitem
+            name="Service Type"
+            parent="menu_maintenance_types"
+            id="menu_maintenance_service_types"
+            action="action_maintenance_service_type"
+        />
+
+        <menuitem
+            name="Technical Type"
+            parent="menu_maintenance_types"
+            id="menu_maintenance_technical_types"
+            action="action_maintenance_technical_type"
+        />
+        
+
+
+    </data>
+</openerp>
